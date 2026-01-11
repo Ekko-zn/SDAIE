@@ -6,7 +6,7 @@
 Official implementation of the paper "**Self-Supervised AI-Generated Image Detection: A Camera Metadata Perspective**".
 
 ## 🆕 News
-Our paper has been accepted for publication in **IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)**🎉🎉🎉
+Our paper has been accepted for publication in **IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)** 🎉🎉🎉
 
 ## 📜 Abstract
 
