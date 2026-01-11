@@ -5,6 +5,8 @@
 
 Official implementation of the paper "**Self-Supervised AI-Generated Image Detection: A Camera Metadata Perspective**".
 
+⭐️Our series work: [BLADES (ICCV'25 Highlight)](https://github.com/MZMMSEC/AIGFD_BLO)
+
 ## 🆕 News
 Our paper has been accepted for publication in **IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)** 🎉🎉🎉
 
