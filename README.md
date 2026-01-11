@@ -1,0 +1,42 @@
+# Self-Supervised AI-Generated Image Detection: A Camera Metadata Perspective
+
+[![Journal](https://img.shields.io/badge/Journal-IEEE%20TPAMI-blue.svg)](https://arxiv.org/abs/2512.05651)
+
+
+Official implementation of the paper "**Self-Supervised AI-Generated Image Detection: A Camera Metadata Perspective**", accepted by **IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)**.
+
+
+## 📜 Abstract
+
+The proliferation of AI-generated imagery poses escalating challenges for multimedia forensics, yet many existing detectors depend on assumptions about the internals of specific generative models, limiting their cross-model applicability. We introduce a self-supervised approach for detecting AI-generated images that leverages camera metadata---specifically
+exchangeable image file format (EXIF) tags---to learn features intrinsic to digital photography. Our pretext task trains a feature extractor solely on camera-captured photographs by classifying categorical EXIF tags (\eg, camera model and scene type) and pairwise-ranking ordinal and continuous EXIF tags (\eg, focal length and aperture value). Using these EXIF-induced features, we first perform one-class detection by modeling the distribution of photographic images with a Gaussian mixture model and flagging low-likelihood samples as AI-generated. We then extend to binary detection that treats the learned extractor as a strong regularizer for a classifier of the same architecture, operating on high-frequency residuals from spatially scrambled patches. Extensive experiments across various generative models demonstrate that our EXIF-induced detectors substantially advance the state of the art, delivering strong generalization to in-the-wild samples and robustness to common benign image perturbations.
+
+---
+
+### Key Contributions:
+* A self-supervised pretext task that leverages EXIF tags to learn camera-intrinsic features from photographs only.
+* A feature extractor that operates on high-frequency residuals of scrambled patches to suppress semantics and accentuate imaging regularities.
+* A one-class detector that models photographic features with a GMM and detects anomalies without seeing AI-generated images during training.
+* A binary detector that uses the pretext extractor as a strong regularizer, improving generalization and robustness across generators and post-processing.
+
+---
+
+## 📅 TODO List
+
+- [ ] **Release Test Code**: Inference scripts and pre-trained checkpoints for quick evaluation.
+- [ ] **Release Training Code**: Complete pipeline for self-supervised pretext tasks and binary classifier training.
+- [ ] **Release EXIF Dataset**: Curated dataset of EXIF metadata and processed labels used in this study.
+
+
+
+## ✍️ Citation
+
+If you find our work or code useful for your research, please cite:
+
+```bibtex
+@article{zhong2025self,
+  title={Self-Supervised AI-Generated Image Detection: A Camera Metadata Perspective},
+  author={Zhong, Nan and Zou, Mian and Xu, Yiran and Qian, Zhenxing and Zhang, Xinpeng and Wu, Baoyuan and Ma, Kede},
+  journal={arXiv preprint arXiv:2512.05651},
+  year={2025}
+}
