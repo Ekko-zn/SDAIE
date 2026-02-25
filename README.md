@@ -32,6 +32,39 @@ exchangeable image file format (EXIF) tags---to learn features intrinsic to digi
 - [ ] **Release EXIF Dataset**: Curated dataset of EXIF metadata and processed labels used in this study.
 
 
+## 🛠️ Environment Configuration
+This project recommends using uv for fast package management:
+```bash
+uv sync
+```
+## 📂 Dataset Description & Downloads
+| Parameter | Description | Resource Link |
+| :--- | :--- | :--- |
+| `--exif_image_path` | Images with EXIF metadata required for backbone training | [Download](#) |
+| `--test_image_path` | Test sets | [Download](#) |
+| `--oc_realonly_image_path` | One-class training set (contains only ImageNet/LSUN real images) | [Download](#) |
+| `--bc_trainset_path` | Training dataset for binary classification | [Download](#) |
+
+## 🚀 Quick Start
+### 1. Training the Backbone
+```
+torchrun --nproc_per_node=8 backbone_train.py
+```
+### 2. One-Class Detection Pipeline (Backbone Evaluation)
+```
+python oc_main.py
+```
+### 3. Binary Classification Model Training
+```
+torchrun --nproc_per_node=8 bc_train.py
+```
+### 4. Binary Classification Model Evaluation
+```
+python bc_eval.py
+```
+
+## 📦 Pre-trained Weights
+We provide pre-trained model checkpoints for quick reproduction: Backbone Checkpoint and BC Classifier Checkpoint.
 
 ## ✍️ Citation
 
