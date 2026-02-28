@@ -25,12 +25,6 @@ exchangeable image file format (EXIF) tags---to learn features intrinsic to digi
 
 ---
 
-## 📅 TODO List
-
-- [ ] **Release Test Code**: Inference scripts and pre-trained checkpoints for quick evaluation.
-- [ ] **Release Training Code**: Complete pipeline for self-supervised pretext tasks and binary classifier training.
-- [ ] **Release EXIF Dataset**: Curated dataset of EXIF metadata and processed labels used in this study.
-
 
 ## 🛠️ Environment Configuration
 This project recommends using uv for fast package management:
@@ -40,10 +34,10 @@ uv sync
 ## 📂 Dataset Description & Downloads
 | Parameter | Description | Resource Link |
 | :--- | :--- | :--- |
-| `--exif_image_path` | Images with EXIF metadata required for backbone training | [Download](#) |
-| `--test_image_path` | Test sets | [Download](#) |
-| `--oc_realonly_image_path` | One-class training set (contains only ImageNet/LSUN real images) | [Download](#) |
-| `--bc_trainset_path` | Training dataset for binary classification | [Download](#) |
+| `-exif_image_path` | Images with EXIF metadata required for backbone training | [Download](https://drive.google.com/drive/folders/1-xV41wjdorr0tl8vI9q6l8zsBJHBvfpq?usp=sharing) |
+| `-test_image_path` | Test sets | [Download](https://drive.google.com/file/d/1ptbEdfbovwS_31ElHUeKIPMas764Hye7/view?usp=sharing) |
+| `-oc_realonly_image_path` | One-class training set (contains only ImageNet/LSUN real images) | [Download](https://drive.google.com/file/d/1sl7qBAA5kE2uFFTSPztvihmBXLbmvbPY/view?usp=sharing) |
+| `-bc_trainset_path` | Training dataset for binary classification | [Download](https://drive.google.com/file/d/1tI6zdhRV3PCimnkDmy3ikPzSQ_Ya8-Rp/view?usp=sharing) |
 
 ## 🚀 Quick Start
 ### 1. Training the Backbone
@@ -64,7 +58,7 @@ python bc_eval.py
 ```
 
 ## 📦 Pre-trained Weights
-We provide pre-trained model checkpoints for quick reproduction: Backbone Checkpoint and BC Classifier Checkpoint.
+We provide pre-trained model [checkpoints](https://drive.google.com/drive/folders/10cMAWnlo6SFLdp5gR3ykiQHwRRbOJlT-?usp=sharing) for quick reproduction: backbone checkpoint and BC classifier checkpoint.
 
 ## ✍️ Citation
 
